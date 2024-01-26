@@ -1,0 +1,64 @@
+.navbar{
+    background-color: #1b1b1b;
+    color: white;
+    width: 18vw;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    border-radius: 0 12px 12px 0;
+}
+.nav-content{
+    height: 50%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40%;
+}
+.nav-icon{
+    width: 100%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 10px;
+    border-radius: 10px;
+    position: relative;
+}
+.nav-icon:hover{
+    background-color: #383838;
+}
+.navbar-add-icon input{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 570px) {
+        .navbar{
+            width: 100%;
+            height: 12%;
+            align-items: center;
+            border-radius: 18px 18px 0 0;
+        }
+       .nav-content{
+            width: 100%;
+            flex-direction: row;
+            margin-bottom: 0px;
+            align-items: center;
+            justify-content: space-around;
+       }
+       .set-icon-size{
+            height: 26px;
+            width: 26px;
+       }
+       .nav-icon{
+            width: auto;
+       }
+       .nav-icon-content{
+            display: none;
+       }
+}

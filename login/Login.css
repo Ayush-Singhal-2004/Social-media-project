@@ -1,0 +1,83 @@
+.loginContainer{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(143, 116, 185);
+    color: white;
+}
+.loginCard{
+    width: 20em;
+    height: 25em;
+    background-color: #252525;
+    border: 1px solid white;
+    box-shadow: -10px 10px 50px rgb(0, 0, 0);
+}
+.loginForm{
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.heading{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 8%;
+    margin-bottom: 18px;
+    font-size: larger;
+}
+.username{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+.username input{
+    height: 30px;
+    width: 220px;
+    margin-bottom: 5px;     
+}
+.password{
+    display: flex;
+    flex-direction: column;
+    padding-top: 5px;
+    padding-bottom: 20px;
+}
+.password input{
+    height: 30px;
+    width: 220px;
+    margin-bottom: 5px;
+}
+label{
+    font-size: larger;
+    margin-bottom: 6px;
+}
+input{
+    border: 1px solid white;
+    padding: 8px;
+    background-color: rgb(209, 209, 209);
+}
+.loginBtn{
+    padding: 8px 14px;
+    background-color: rgb(62, 134, 71);
+    border: 1px solid white;
+    font-weight: bold;
+    color: black;
+    transition: 0.4s;
+}
+.loginBtn:hover{
+    background-color: rgb(61, 185, 158);
+    cursor: pointer;
+    box-shadow: -1px 1px 10px white;
+}
+.newAcc{
+    position: relative;
+    top: 18px;
+    color: white;
+    text-decoration: none;
+}
+.newAcc:hover{
+    text-decoration: underline;
+}

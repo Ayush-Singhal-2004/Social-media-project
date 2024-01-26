@@ -1,0 +1,32 @@
+.dashboard-app{
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.userDashboard{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(243, 243, 243);
+    display: flex;
+    border: 1px solid black;
+}
+.main_content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+.dashboard-content{
+    height: 100%;
+    width: 100%;
+}
+
+@media screen and (max-width: 570px) {
+       .userDashboard{
+            flex-direction: column-reverse;
+       }
+}

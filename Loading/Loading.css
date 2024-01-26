@@ -1,0 +1,16 @@
+.loading-container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(34, 34, 34);
+    position: absolute;
+    z-index: 200;
+    left: 0;
+}
+@media screen and (max-width: 570px){
+    .loading-container{
+        bottom: 0;
+    }
+}

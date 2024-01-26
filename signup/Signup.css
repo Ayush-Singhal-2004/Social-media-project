@@ -1,0 +1,43 @@
+.signupCard{
+    width: 20em;
+    height: 85%;
+}
+.signupCard h2{
+    margin-bottom: 8px;
+}
+.email{
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+}
+.signupBtn button{
+    padding: 10px 20px;
+}
+.signupform input{
+    height: 32px;
+    width: 220px;
+} 
+.fullname{
+    display: flex;
+    flex-direction: column;
+}
+#emialId{
+    margin-bottom: 10px;
+}
+#fullnameId{
+    margin-bottom: 8px;
+}
+.signupBtn {
+    text-decoration: none;
+}
+.signupHeading{
+    position: relative;
+    top: 15px;
+    margin-top: 10px;
+}
+.signup-err-m{
+    margin-bottom: 8px; 
+}
+.signup-input-m{
+    margin-top: -12px;
+}

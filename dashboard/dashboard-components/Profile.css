@@ -1,0 +1,279 @@
+.profile-page{
+    height: 100%;
+    width: 85%;
+    /* background-color: aquamarine; */
+    background-color: rgb(243, 243, 243);
+    padding: 0 2.5vh 0 2.5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* border-radius: 10px; */
+    gap: 1vh;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+}
+.profile-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5px;
+    position: relative;
+}
+.profile-header h3{
+    font-weight: 500;
+    color: white;
+}
+.profile-header svg{
+    position: absolute;
+    right: 1%;
+    cursor: pointer;
+    height: 20px;
+    width: 20px;
+    color: white;
+}
+.profile-name{
+    padding: 1vw 5vw;
+    display: flex;
+    justify-content: space-between;
+}
+.profile-name p{
+    font-size: 2vh;
+    color: white;
+}
+.profile-name h2{
+    width: 1.5vw;
+    font-size: 5.5vh;
+    color: white;
+}
+.profile-name-detail h2{
+    letter-spacing: 2.5px;
+}
+.profile-page-upper-container{
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+    /* background-color: rgb(205, 151, 255); */
+    /* background-color: #a679ca; */
+    background-color: #3F3A62;
+    border-radius: 10px;
+}
+.profile-follower-container{
+    display: flex;
+    justify-content: space-around;
+}
+.profile-image img{
+    height: 16vh;
+    width: 16vh;
+    border-radius: 12px;
+    /* border: 1px solid rgb(255, 255, 255); */
+    box-shadow: 0 0 15px rgb(185, 185, 185);
+}
+.follow-info{
+    display: flex;
+    gap: 12vh;
+}
+.profile-user-detail{
+    height: 9vh;
+    width: 9vh;
+    background-color: tomato;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    box-shadow: -3px 3px 15px rgb(66, 66, 66);
+}
+.count-detail{
+    font-size: 4vh;
+}
+.detail-text{
+    font-size: 1.8vh;
+}
+.profile-main-btn{
+    padding: 2.5vh 2vh 2vh 2vh;
+    display: flex;
+    justify-content: center;
+    gap: 3vw;
+}
+.profile-main-btn button{
+    width: 20vh;
+    padding: 8px 14px;
+    background-color: rgb(70, 151, 81);
+    border: 1px solid white;
+    font-weight: bold;
+    color: black;
+    transition: 0.4s;
+    font-size: 2vh;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.profile-main-btn button:hover{
+    background-color: rgb(61, 185, 158);
+}
+.user-posts{
+    /* background-color: pink; */
+    /* background-color: #f4e6ba; */
+    background-color: #DEDBF6;
+    height: 48vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    border-radius: 10px;
+}
+.post-heading p{
+   font-size: smaller;
+}
+.main-post-container{
+    min-height: 80%;   
+    width: 85%;
+    padding: 5px;
+    overflow-y: scroll;
+    /* background-color: bisque; */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px 0;
+    /* margin-top: 20px; */
+    align-items: center;
+}
+.main-post-container img{
+    height: 12vw;
+    width: 20vw;
+    /* border: 1px solid black; */
+    border-radius: 10px;
+    cursor: pointer;
+}
+.main-post-container p{
+    width: 20em;
+}
+.post-item{
+    display: flex;
+    justify-content: center;
+}
+
+
+.editBox{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255,255,255,0.4);
+    border: 1px solid rgba(255,255,255,0.2);
+}
+.edit-dialog-box{
+    /* height: 35vh; */
+    width: 35vh;
+    background-color: #252525;
+    border: 1px solid black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 8vh 10px 7vh 10px;
+    position: relative;
+}
+.exit-edit-dialog-box{
+    position: absolute;
+    top: 5%;
+    right: 5%;
+}
+.exit-edit-dialog-box svg{
+    cursor: pointer;
+}
+.edit-dialog-box-item{
+    width: 80%;
+}
+
+#edit-profile-btn{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#edit-profile-btn p{
+    position: absolute;
+}
+#edit-profile-btn input{
+    height: 3vh;
+    width: 100%;
+    opacity: 0;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+@media screen and (max-width: 570px){
+    .profile-page{
+        gap: 5vw;
+        height: 89%;
+        width: 99%;
+    }
+    .profile-page-upper-container{
+        gap: 1.5vw;
+    }
+    .profile-name{
+        padding: 3vw 5vw;
+    }
+    .profile-name p{
+        font-size: 1.5vh;
+    }
+    .profile-name h2{
+        font-size: 4vh;
+    }
+    .profile-image img{
+        height: 11vh;
+        width: 11vh;
+    }
+    .profile-follower-container{
+        flex-direction: column;
+        gap: 1vh;
+    }
+    .follow-info{
+        gap: 5vh;
+        justify-content: center;
+    }
+    .profile-user-detail{
+        height: 8vh;
+        width: 8vh;
+    }
+    .user-posts{
+        height: 45vh;
+    }
+    .count-detail{
+        font-size: 3vh;
+    }
+    .detail-text{
+        font-size: 1.3vh;
+    }
+    .profile-main-btn button{
+        width: 18vh;
+    }
+    .main-post-container{
+        width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0px;
+    }
+    .main-post-container img{
+        /* height: 19vh;
+        width: 19vh; */
+        height: 26vw;
+        width: 38vw;
+    }
+    .editBox{
+        width: 95%;
+    }
+    .profile-header svg{
+        right: 3%;
+        height: 18px;
+        width: 18px;
+    }
+}

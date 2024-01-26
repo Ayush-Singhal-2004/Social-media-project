@@ -1,0 +1,191 @@
+@keyframes note-animation {
+    from {height: 0;}
+    to {height: 80%;}
+}
+
+.main-home-container{
+    height: 100%;
+    width: 100%;
+    padding: 0 2.5vh 0 2.5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+.notes-container{
+    height: 18%;
+    width: 100%;
+    /* background-color: #a679ca; */
+    background-color: #3F3A62;
+    display: flex;
+    overflow-x: scroll;
+    align-items: center;
+    gap: 10px;
+    padding-left: 10px ;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.notes-item{
+    height: 100%;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1px;
+}
+.notes-item img{
+    height: 5vw;
+    width: 5vw;
+    border-radius: 50px;
+    /* border: 1px solid black; */
+    /* border: 1px solid white; */
+}  
+.note-content{
+    display: none;
+}
+.note-username{
+    height: 3.5vh;
+    max-width: 5.5vw;
+    font-size: 1.8vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+
+    color: white;
+}
+.notes-item:hover{
+    img{
+        display: none;
+    }
+    .note-content{
+        height: 80%;
+        width: 8vw;
+        font-size: 1vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(243, 243, 243);
+        border-radius: 12px;
+        overflow-y: hidden;
+        padding: 10px 5px 5px 5px;
+        cursor: pointer;
+        animation-name: note-animation;
+        animation-duration: 0.5s;
+    }
+    .note-username{
+        display: none;
+    }
+}
+.home-page-post-container{
+    height: 76vh;
+    border-radius: 10px;
+    /* background-color: #f4e6ba; */
+    background-color: #DEDBF6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+    cursor: pointer;
+}
+.home-page-posts{
+    height: 97%;
+    width: 94%;
+    border-radius: 12px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    overflow-y: scroll;
+    gap: 20px;
+    position: relative;
+}
+.home-page-posts img{
+    height: 18vw;
+    width: 32vw;
+    border-radius: 10px;
+}
+.home-posts-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 14px 0 8px 0;
+}
+.home-page-posts-info{
+    height: 6vh;
+    width: 86%;
+    /* background-color: aqua; */
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    gap: 12px;
+    padding: 10px;
+}
+.home-page-posts-info img{
+    height: 26px;
+    width: 26px;
+    border-radius: 50%;
+    /* border: 1px solid black; */
+}
+.home-page-posts-info p{
+    font-size: small;
+}
+.home-page-posts-msssg{
+    position: absolute;
+    left: 2%;
+    color: rgb(116, 116, 116);
+}
+.home-page-posts-info svg{
+    position: relative;
+    left: 65%;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 570px){
+    .home-page-posts{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .notes-item img{
+        height: 16vw;
+        width: 16vw;
+    }
+    .home-page-posts img{
+        height: 45vw;
+        width: 75vw;
+    }
+    .home-page-post-container{
+        height: 68vh;
+    }
+    .home-page-posts-info img{
+        height: 24px;
+        width: 25px;
+        border-radius: 50%;
+    }
+    .home-page-posts-info svg{
+        position: relative;
+        left: 45%;
+    }
+    .notes-item:hover{
+        img{
+            display: none;
+        }
+        .note-content{
+            height: 80%;
+            width: 10vh;
+            font-size: 1.5vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgb(243, 243, 243);
+            border-radius: 12px;
+            overflow-y: hidden;
+            padding: 10px 5px 5px 5px;
+            cursor: pointer;
+            animation-name: note-animation;
+            animation-duration: 0.5s;
+        }
+    }
+    .note-username{
+        height: 3.5vh;
+        max-width: 10vh;
+    }
+}

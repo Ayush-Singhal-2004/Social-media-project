@@ -1,0 +1,19 @@
+@font-face {
+    font-family: "font1";
+    src: url("NBInternationalProBoo.ttf");
+}
+@font-face {
+    font-family: "font2";
+    src: url("Rejouice-Headline.ttf");
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: font1;
+    /* font-family:Georgia, 'Times New Roman', Times, serif; */
+}
+.errorMssg{
+    color: tomato;
+    font-size: small;
+}
